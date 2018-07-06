@@ -1,0 +1,7 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>Parent component</h1>
+ <br>
+ <app-sub-app (MyNewEvent)="Message=$event" [parentData]="message"></app-sub-app>
+ <h1>{{Message}}</h1>
+</div>
