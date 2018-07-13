@@ -1,0 +1,20 @@
+
+<div class="col-md-3"></div>
+<div class="col-md-6">
+    <h1>Admission Form</h1>
+<form>
+    <div class="form-group">
+      <label>Username</label>
+      <input required ngModel name="user" #name="ngModel" type="text" class="form-control">
+      <p class="alert alert-danger" *ngIf="!name.valid">Name is Compulsory</p>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input required ngModel name="Password" #pass="ngModel" type="text" class="form-control">
+        <p class="alert alert-danger" *ngIf="!pass.valid">Password is Compulsory</p>
+      </div>
+      <div>
+        <button class="btn btn-success" (click)="LogClick(name, pass)">Submit</button>
+      </div>
+  </form>
+  </div>
