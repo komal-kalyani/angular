@@ -1,21 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material';
-
+import { MydirDirective } from './mydir.directive';
+import { CompSucessDirective } from './comp-sucess.directive';
+import { CompFailureDirective } from './comp-failure.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MydirDirective,
+    CompSucessDirective,
+    CompFailureDirective
   ],
   imports: [
-    BrowserModule,BrowserAnimationsModule,
-    MatInputModule,FormsModule, MatButtonModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
