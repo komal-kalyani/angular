@@ -1,0 +1,6 @@
+<h3>Book Details of Marvellous Infosystems</h3>
+
+<!--Display contents from batches array-->
+<ul *ngFor="let value of books">
+  <li>{{value.Name}} - {{value.Price}} - {{value.Author}} - {{value.NoOfPages}}</li>
+</ul>
