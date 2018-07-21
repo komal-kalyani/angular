@@ -15,9 +15,12 @@ import {MatButtonModule} from '@angular/material';
   ],
   imports: [
     BrowserModule,BrowserAnimationsModule,
-    MatInputModule,FormsModule, MatButtonModule
+    MatInputModule,FormsModule, MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
